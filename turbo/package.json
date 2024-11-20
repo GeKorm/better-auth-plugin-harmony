@@ -12,8 +12,12 @@
     "turbo": "^2.3.0",
     "typescript": "5.5.4"
   },
-  "packageManager": "pnpm@8.15.6",
   "engines": {
     "node": ">=18"
-  }
+  },
+  "packageManager": "yarn@4.5.1",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ]
 }
