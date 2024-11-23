@@ -1,0 +1,21 @@
+# Package manager
+.yarn
+yarn.lock
+node_modules
+
+# Turborepo
+**/.turbo
+
+# Cloudflare
+**/.wrangler
+
+# Build artifacts
+**/dist
+
+# Typescript
+**/tsconfig.tsbuildinfo
+
+# Changeset temporarily
+# FIXME: https://github.com/changesets/changesets/issues/1283
+.changeset
+CHANGELOG.md

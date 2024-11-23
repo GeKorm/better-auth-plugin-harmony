@@ -1,0 +1,12 @@
+{
+  "$schema": "https://unpkg.com/@changesets/config@3.0.4/schema.json",
+  "changelog": ["@changesets/changelog-github", { "repo": "gekorm/better-auth-plugin-harmony" }],
+  "commit": false,
+  "privatePackages": { "version": true, "tag": true },
+  "fixed": [],
+  "linked": [],
+  "access": "restricted",
+  "baseBranch": "main",
+  "updateInternalDependencies": "patch",
+  "ignore": []
+}

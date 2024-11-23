@@ -1,0 +1,33 @@
+{
+  "name": "turbo",
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=20"
+  },
+  "packageManager": "yarn@4.5.1",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "turbo dev",
+    "stylecheck": "prettier . --check",
+    "build": "turbo build --concurrency=100% --cache-dir=.turbo",
+    "lint": "turbo lint --concurrency=100% --cache-dir=.turbo",
+    "lint-root": "CHECK_REDOS=true eslint .",
+    "emit-types": "turbo run emit-types --concurrency=100% --cache-dir=.turbo",
+    "typecheck": "turbo run typecheck --concurrency=100% --cache-dir=.turbo",
+    "release": "turbo run build --cache-dir=.turbo && yarn workspaces foreach -A -p -j unlimited --no-private npm publish --tolerate-republish",
+    "format": "prettier --write \"**/*.{cjs,js,mjs,ts,tsx,md,json}\""
+  },
+  "devDependencies": {
+    "@changesets/changelog-github": "^0.5.0",
+    "@changesets/cli": "^2.27.10",
+    "@repo/eslint-config": "workspace:^",
+    "@repo/tsconfig": "workspace:^",
+    "eslint": "^9.15.0",
+    "prettier": "^3.3.3",
+    "turbo": "^2.3.0",
+    "typescript": "5.6.3"
+  }
+}
