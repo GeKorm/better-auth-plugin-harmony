@@ -2,17 +2,17 @@
   <a href="https://github.com/better-auth/better-auth">
     <picture>
       <source
-        srcset="https://raw.githubusercontent.com/gekorm/better-auth-plugin-harmony/refs/heads/main/packages/plugins/assets/better-auth-logo-dark-180.png"
+        srcset="https://raw.githubusercontent.com/gekorm/better-auth-plugin-harmony/refs/heads/main/packages/plugins/assets/better-auth-logo-dark.png"
         media="(prefers-color-scheme: dark)"
       />
       <source
-        srcset="https://raw.githubusercontent.com/gekorm/better-auth-plugin-harmony/refs/heads/main/packages/plugins/assets/better-auth-logo-light-180.png"
+        srcset="https://raw.githubusercontent.com/gekorm/better-auth-plugin-harmony/refs/heads/main/packages/plugins/assets/better-auth-logo-light.png"
         media="(prefers-color-scheme: light)"
       />
       <img
-        width="240"
+        width="215"
         height="auto"
-        src="https://raw.githubusercontent.com/gekorm/better-auth-plugin-harmony/refs/heads/main/packages/plugins/assets/better-auth-logo-dark-180.png"
+        src="https://raw.githubusercontent.com/gekorm/better-auth-plugin-harmony/refs/heads/main/packages/plugins/assets/better-auth-logo-dark.png"
         alt="Better Auth Logo"
       />
     </picture>
