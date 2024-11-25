@@ -14,6 +14,7 @@
     "stylecheck": "prettier . --check",
     "build": "turbo build --concurrency=100% --cache-dir=.turbo",
     "lint": "turbo lint --concurrency=100% --cache-dir=.turbo",
+    "test": "turbo test --cache-dir=.turbo",
     "lint-root": "CHECK_REDOS=true eslint .",
     "emit-types": "turbo run emit-types --concurrency=100% --cache-dir=.turbo",
     "typecheck": "turbo run typecheck --concurrency=100% --cache-dir=.turbo",
@@ -27,7 +28,7 @@
     "@repo/tsconfig": "workspace:^",
     "eslint": "^9.15.0",
     "prettier": "^3.3.3",
-    "turbo": "^2.3.0",
-    "typescript": "5.6.3"
+    "turbo": "^2.3.1",
+    "typescript": "5.7.2"
   }
 }

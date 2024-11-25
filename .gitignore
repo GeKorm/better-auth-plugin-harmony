@@ -55,3 +55,4 @@ lerna-debug.log*
 .netrc
 
 .idea/dictionaries/
+/packages/plugins/.db/

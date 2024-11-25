@@ -10,6 +10,7 @@ const extraneous = {
     '**/manager.ts',
     '**/*.stories.{mjs,js,jsx,ts,tsx}', // storybook
     'src/dev/**', // non-production utilities
+    '**/*.test.{mjs,js,jsx,ts,tsx}', // tests
     'test/**', // tape, common npm pattern
     'tests/**', // also common npm pattern
     'src/tests/**', // in our packages

@@ -5,10 +5,19 @@ import json from '@eslint/json';
 import markdown from '@eslint/markdown';
 import comments from '@eslint-community/eslint-plugin-eslint-comments/configs';
 import airbnbBestPractices from 'eslint-config-airbnb-base/rules/best-practices';
+import airbnbErrors from 'eslint-config-airbnb-base/rules/errors';
+import airbnbEs6 from 'eslint-config-airbnb-base/rules/es6';
+import airbnbImports from 'eslint-config-airbnb-base/rules/imports';
+import airbnbNode from 'eslint-config-airbnb-base/rules/node';
+import airbnbStrict from 'eslint-config-airbnb-base/rules/strict';
+import airbnbStyle from 'eslint-config-airbnb-base/rules/style';
+import airbnbVariables from 'eslint-config-airbnb-base/rules/variables';
 import eslintConfigPrettier from 'eslint-config-prettier';
 import importPlugin from 'eslint-plugin-import';
 import node from 'eslint-plugin-n';
+import promise from 'eslint-plugin-promise';
 import * as regexpPlugin from 'eslint-plugin-regexp';
+import security from 'eslint-plugin-security';
 import simpleImportSort from 'eslint-plugin-simple-import-sort';
 import eslintPluginUnicorn from 'eslint-plugin-unicorn';
 import yml from 'eslint-plugin-yml';
@@ -19,6 +28,16 @@ import ignorePatterns from './src/ignorePatterns.js';
 
 const codeFiles = ['**/*.{js,jsx,cjs,mjs,ts,tsx,cts,mts}'];
 const airbnbNoParamReassign = airbnbBestPractices.rules['no-param-reassign'][1];
+const airbnb = Object.assign(
+  airbnbBestPractices.rules,
+  airbnbErrors.rules,
+  airbnbEs6.rules,
+  airbnbImports.rules,
+  airbnbNode.rules,
+  airbnbStrict.rules,
+  airbnbStyle.rules,
+  airbnbVariables.rules
+);
 
 const compat = new FlatCompat();
 
@@ -32,11 +51,15 @@ export default tseslint.config(
     }
   },
   { ...js.configs.recommended, files: codeFiles },
-  { ...comments.recommended, files: codeFiles },
   { ...node.configs['flat/recommended'], files: codeFiles },
+  { ...promise.configs['flat/recommended'], files: codeFiles },
+  { ...security.configs.recommended, files: codeFiles },
   { ...importPlugin.flatConfigs.recommended, files: codeFiles },
+  { rules: airbnb, files: codeFiles },
+  { ...importPlugin.flatConfigs.typescript, files: codeFiles },
   { extends: [tsConfigs.stylisticTypeChecked], files: codeFiles },
   { extends: [tsConfigs.strictTypeChecked], files: codeFiles },
+  { ...comments.recommended, files: codeFiles },
   {
     settings: {
       cache: false,

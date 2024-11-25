@@ -55,6 +55,10 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: true
+
       - name: Cache turbo setup
         uses: actions/cache@v4
         with:
@@ -74,5 +78,6 @@ jobs:
           enable-corepack: false
           cache-node-modules: true
           cache-install-state: true
-#      - name: Test
-#        run: yarn test -- --maxWorkers=${{ steps.cpu-cores.outputs.count }}
+
+      - name: Test
+        run: yarn test
