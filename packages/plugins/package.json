@@ -1,6 +1,7 @@
 {
   "name": "better-auth-plugin-harmony",
   "version": "1.0.2",
+  "author": "George Kormaris <npm@gekorm.com>",
   "type": "module",
   "scripts": {
     "lint": "CHECK_REDOS=true eslint .",
@@ -9,6 +10,21 @@
     "build": "tsup --clean --dts --minify --tsconfig tsconfig.build.json",
     "test": "vitest run --coverage --coverage.include=src",
     "test:watch": "vitest"
+  },
+  "keywords": [
+    "authentication",
+    "email",
+    "domains",
+    "disposable"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/gekorm/better-auth-plugin-harmony",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gekorm/better-auth-plugin-harmony.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gekorm/better-auth-plugin-harmony/issues"
   },
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
