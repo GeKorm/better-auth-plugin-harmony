@@ -2,24 +2,24 @@
   <a href="https://github.com/better-auth/better-auth">
     <picture>
       <source
-        srcset="https://raw.githubusercontent.com/gekorm/better-auth-plugin-harmony/refs/heads/main/assets/better-auth-logo-dark-180.png"
+        srcset="https://raw.githubusercontent.com/gekorm/better-auth-plugin-harmony/refs/heads/main/packages/plugins/assets/better-auth-logo-dark-180.png"
         media="(prefers-color-scheme: dark)"
       />
       <source
-        srcset="https://raw.githubusercontent.com/gekorm/better-auth-plugin-harmony/refs/heads/main/docs/public/better-auth-logo-light-180.png"
+        srcset="https://raw.githubusercontent.com/gekorm/better-auth-plugin-harmony/refs/heads/main/packages/plugins/assets/better-auth-logo-light-180.png"
         media="(prefers-color-scheme: light)"
       />
       <img
         width="240"
         height="180"
-        src="https://raw.githubusercontent.com/gekorm/better-auth-plugin-harmony/refs/heads/main/assets/better-auth-logo-dark-180.png"
+        src="https://raw.githubusercontent.com/gekorm/better-auth-plugin-harmony/refs/heads/main/packages/plugins/assets/better-auth-logo-dark-180.png"
         alt="Better Auth Logo"
       />
     </picture>
   </a>
   <img
     alt="Better Auth Plugin Harmony Logo"
-    src="https://raw.githubusercontent.com/gekorm/better-auth-plugin-harmony/refs/heads/main/assets/better-auth-harmony-logo-180.png"
+    src="https://raw.githubusercontent.com/gekorm/better-auth-plugin-harmony/refs/heads/main/packages/plugins/assets/better-auth-harmony-logo-180.png"
     width="180"
     height="180"
   />
