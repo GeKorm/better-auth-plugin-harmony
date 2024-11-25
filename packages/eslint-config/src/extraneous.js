@@ -1,9 +1,7 @@
 const extraneous = {
   devDependencies: [
     '**/.eslintrc.cjs', // eslint
-    '**/eslint.config.js', // eslint
     '**/.d.ts', // typescript definitions
-    'babel.config.cjs', // babel
     'config/**/*.{mjs,ts}', // webpack loaders etc
     'codegen.ts', // graphql code generator
     '.storybook/*.{js,ts,tsx}', // storybook
@@ -21,12 +19,10 @@ const extraneous = {
     'test.{js,jsx}', // repos with a single test file
     'test-*.{js,jsx}', // repos with multiple top-level test files
     '**/*{.,_}{test,spec}.{mjs,js,jsx,ts,tsx}', // tests where the extension or filename suffix denotes that it is a test
-    '**/jest.config.{js,ts}', // jest config
+    '*.config.{js,cjs,mjs,ts}', // top-level config files
     '**/jest.setup.{js,ts}', // jest setup
     '**/vue.config.js', // vue-cli config
-    '**/webpack.config.{js,ts}', // webpack config
     '**/webpack.config.*.{js,ts}', // webpack config
-    '**/rollup.config.js', // rollup config
     '**/rollup.config.*.js', // rollup config
     '**/gulpfile.js', // gulp config
     '**/gulpfile.*.js', // gulp config

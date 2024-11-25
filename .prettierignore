@@ -19,3 +19,6 @@ node_modules
 # FIXME: https://github.com/changesets/changesets/issues/1283
 .changeset
 CHANGELOG.md
+
+# Submodules
+better-auth/

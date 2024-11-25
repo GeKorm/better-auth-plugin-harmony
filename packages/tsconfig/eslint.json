@@ -20,6 +20,7 @@
   },
   "include": [
     "${configDir}/src/**/*.ts",
+    "${configDir}/src/**/*.test.ts",
     "${configDir}/src/**/*.js",
     "${configDir}/src/**/*.cjs",
     "${configDir}/src/**/*.mjs",
@@ -27,5 +28,6 @@
     "${configDir}/*.js",
     "${configDir}/*.cjs",
     "${configDir}/*.mjs"
-  ]
+  ],
+  "exclude": ["node_modules", "${configDir}/dist", "${configDir}/packages"]
 }

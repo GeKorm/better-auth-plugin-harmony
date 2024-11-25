@@ -1,1 +1,11 @@
-export { default } from '@repo/eslint-config';
+import config from '@repo/eslint-config';
+import ignorePatterns from '@repo/eslint-config/ignorePatterns';
+
+const [_ignores, ...rest] = config;
+
+export default [
+  {
+    ignores: [...ignorePatterns, 'better-auth/']
+  },
+  ...rest
+];

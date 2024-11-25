@@ -1,0 +1,65 @@
+{
+  "name": "better-auth-plugin-harmony",
+  "version": "1.0.2",
+  "type": "module",
+  "scripts": {
+    "lint": "CHECK_REDOS=true eslint .",
+    "typecheck": "tsc --noEmit --project tsconfig.build.json",
+    "emit-types": "rimraf -g dist/**/*{.ts,.ts.map}; tsc --emitDeclarationOnly --declaration --project tsconfig.build.json",
+    "build": "tsup --clean --dts --minify --tsconfig tsconfig.build.json",
+    "test": "vitest run --coverage --coverage.include=src",
+    "test:watch": "vitest"
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    },
+    "./email": {
+      "import": {
+        "types": "./dist/email.d.ts",
+        "default": "./dist/email.js"
+      },
+      "require": {
+        "types": "./dist/email.d.cts",
+        "default": "./dist/email.cjs"
+      }
+    }
+  },
+  "files": [
+    "dist",
+    "LICENSE.md",
+    "README.md"
+  ],
+  "devDependencies": {
+    "@repo/eslint-config": "*",
+    "@repo/tsconfig": "*",
+    "@types/eslint": "^9.6.1",
+    "@types/node": "^20.17.7",
+    "@types/react-dom": "18.3.1",
+    "@types/validator": "^13.12.2",
+    "@vitest/coverage-v8": "^2.1.5",
+    "better-auth": "^1.0.3",
+    "eslint": "^9.15.0",
+    "rimraf": "^6.0.1",
+    "tsup": "^8.3.5",
+    "typescript": "5.7.2",
+    "vitest": "^2.1.5"
+  },
+  "peerDependencies": {
+    "better-auth": "^1.0.3"
+  },
+  "dependencies": {
+    "better-call": "^0.3.2",
+    "mailchecker": "^6.0.11",
+    "validator": "^13.12.0"
+  }
+}

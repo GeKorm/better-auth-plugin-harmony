@@ -1,1 +1,1 @@
-# better-auth-plugin-harmony
+packages/plugins/README.md

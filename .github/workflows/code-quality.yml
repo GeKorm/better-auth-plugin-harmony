@@ -31,10 +31,10 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-turbo-
 
-      - name: Use Node.js 20
+      - name: Use Node.js 22
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
 
       - name: 📥 Monorepo install
         uses: ./.github/actions/yarn-nm-install
@@ -67,17 +67,20 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-turbo-
 
-      - name: Use Node.js 20
+      - name: Use Node.js 22
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
 
       - name: 📥 Monorepo install
         uses: ./.github/actions/yarn-nm-install
         with:
-          enable-corepack: false
+          enable-corepack: true
           cache-node-modules: true
           cache-install-state: true
+
+      - name: Submodule install
+        run: cd better-auth/ && npm config set ignore-scripts true && pnpm i
 
       - name: Test
         run: yarn test

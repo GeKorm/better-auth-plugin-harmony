@@ -5,15 +5,34 @@
     "build": {
       "dependsOn": ["^build"],
       "inputs": ["$TURBO_DEFAULT$", ".env*"],
-      "outputs": [".next/**", "!.next/cache/**"]
+      "outputs": ["dist/**"]
     },
     "lint": {
-      "dependsOn": ["^lint"]
+      "dependsOn": ["^build", "^typecheck"],
+      "env": ["CHECK_REDOS"]
     },
-    "check-types": {
-      "dependsOn": ["^check-types"]
+    "//#lint:root": {
+      "env": ["CHECK_REDOS"]
     },
-    "test": {},
+    "emit-types-base": {
+      "dependsOn": ["^emit-types"],
+      "outputs": ["dist/**/*.d.ts", "dist/**/*.d.ts.map"]
+    },
+    "emit-types": {
+      "dependsOn": ["emit-types-base"],
+      "outputs": ["dist/**/*.d.ts", "dist/**/*.d.ts.map"]
+    },
+    "typecheck": {
+      "dependsOn": ["^build", "^emit-types"]
+    },
+    "test": {
+      "dependsOn": ["^build"],
+      "env": ["GITHUB_ACTIONS"],
+      "outputs": ["coverage/**", ".db/**"]
+    },
+    "test:watch": {
+      "cache": false
+    },
     "dev": {
       "cache": false,
       "persistent": true

@@ -1,0 +1,10 @@
+{
+  "extends": "@repo/tsconfig/base.json",
+  "exclude": [
+    "node_modules",
+    "${configDir}/dist",
+    "${configDir}/packages",
+    "${configDir}/src/**/*.test.ts",
+    "../../better-auth"
+  ]
+}

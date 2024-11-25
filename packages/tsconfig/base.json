@@ -8,9 +8,9 @@
     "incremental": false,
     "isolatedModules": true,
     "lib": ["es2022", "DOM", "DOM.Iterable"],
-    "module": "NodeNext",
+    "module": "ESNext",
     "moduleDetection": "force",
-    "moduleResolution": "NodeNext",
+    "moduleResolution": "Bundler",
     "noUncheckedIndexedAccess": true,
     "resolveJsonModule": true,
     "skipLibCheck": true,
@@ -19,5 +19,10 @@
     "target": "ES2022"
   },
   "include": ["${configDir}/src/**/*.ts", "${configDir}/src/**/*.js"],
-  "exclude": ["node_modules", "${configDir}/dist", "${configDir}/packages"]
+  "exclude": [
+    "node_modules",
+    "${configDir}/dist",
+    "${configDir}/packages",
+    "${configDir}/src/**/*.test.ts"
+  ]
 }
