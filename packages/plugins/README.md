@@ -11,17 +11,18 @@
       />
       <img
         width="240"
-        height="180"
+        height="auto"
         src="https://raw.githubusercontent.com/gekorm/better-auth-plugin-harmony/refs/heads/main/packages/plugins/assets/better-auth-logo-dark-180.png"
         alt="Better Auth Logo"
       />
     </picture>
   </a>
+  &emsp14;
   <img
     alt="Better Auth Plugin Harmony Logo"
     src="https://raw.githubusercontent.com/gekorm/better-auth-plugin-harmony/refs/heads/main/packages/plugins/assets/better-auth-harmony-logo-180.png"
     width="180"
-    height="180"
+    height="auto"
   />
   <h1>Better Auth Plugin Harmony</h1>
 

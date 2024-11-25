@@ -43,6 +43,9 @@ jobs:
           cache-node-modules: true
           cache-install-state: true
 
+      - name: Submodule install
+        run: cd better-auth/ && npm config set ignore-scripts true && pnpm i
+
       - name: Check prettier styles
         run: yarn stylecheck
 
