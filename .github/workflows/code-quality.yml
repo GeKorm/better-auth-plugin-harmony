@@ -15,7 +15,7 @@ env:
   DO_NOT_TRACK: true
 
 jobs:
-  static-checks:
+  static-check:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
@@ -56,10 +56,10 @@ jobs:
       - name: Lint
         run: yarn lint
 
-      - name: Lint
+      - name: Build
         run: yarn build
 
-  tests:
+  test:
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
