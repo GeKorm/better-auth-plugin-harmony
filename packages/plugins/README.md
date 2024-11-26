@@ -1,28 +1,23 @@
+[//]: # 'FIXME: Use a single picture of the pair (one dark, one light)'
+
 <div align="center">
-  <a href="https://github.com/better-auth/better-auth">
     <picture>
       <source
-        srcset="https://raw.githubusercontent.com/gekorm/better-auth-harmony/refs/heads/main/packages/plugins/assets/better-auth-logo-dark.png"
+        srcset="https://raw.githubusercontent.com/gekorm/better-auth-harmony/refs/heads/main/packages/plugins/assets/better-auth-harmony-banner-dark.png"
         media="(prefers-color-scheme: dark)"
       />
       <source
-        srcset="https://raw.githubusercontent.com/gekorm/better-auth-harmony/refs/heads/main/packages/plugins/assets/better-auth-logo-light.png"
+        srcset="https://raw.githubusercontent.com/gekorm/better-auth-harmony/refs/heads/main/packages/plugins/assets/better-auth-harmony-banner-light.png"
         media="(prefers-color-scheme: light)"
       />
       <img
-        width="215"
+        width="400"
         height="auto"
-        src="https://raw.githubusercontent.com/gekorm/better-auth-harmony/refs/heads/main/packages/plugins/assets/better-auth-logo-light.png"
+        src="https://raw.githubusercontent.com/gekorm/better-auth-harmony/refs/heads/main/packages/plugins/assets/better-auth-harmony-banner-light.png"
         alt="Better Auth Logo"
       />
     </picture>
-  </a>
-  <img
-    alt="Better Auth Plugin Harmony Logo"
-    src="https://raw.githubusercontent.com/gekorm/better-auth-harmony/refs/heads/main/packages/plugins/assets/better-auth-harmony-logo-180.png"
-    width="180"
-    height="auto"
-  />
+
   <h1>Better Auth Harmony</h1>
 
 <a href="https://github.com/gekorm/better-auth-harmony/actions/workflows/code-quality.yml"><img alt="100% coverage with Vitest" src="https://img.shields.io/badge/Coverage-100%25-green?style=flat-square&logo=vitest"></a>

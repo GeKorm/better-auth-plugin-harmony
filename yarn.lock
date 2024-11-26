@@ -1448,7 +1448,7 @@ __metadata:
     "@repo/eslint-config": "workspace:*"
     "@repo/tsconfig": "workspace:*"
     eslint: "npm:^9.15.0"
-    prettier: "npm:^3.3.3"
+    prettier: "npm:^3.4.0"
     turbo: "npm:^2.3.2"
     typescript: "npm:5.7.2"
   languageName: unknown
@@ -1704,12 +1704,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^22.9.4":
-  version: 22.9.4
-  resolution: "@types/node@npm:22.9.4"
+"@types/node@npm:^22.10.0":
+  version: 22.10.0
+  resolution: "@types/node@npm:22.10.0"
   dependencies:
-    undici-types: "npm:~6.19.8"
-  checksum: 10c0/85521424033d32c2cb2279f1a2dfe9a3630f253a4c877352607eece2b5fe45ddd80acc608dfcef9ae9c2b385203332e53cc1b6cb15c958504b26011ddcf65d4f
+    undici-types: "npm:~6.20.0"
+  checksum: 10c0/efb3783b6fe74b4300c5bdd4f245f1025887d9b1d0950edae584af58a30d95cc058c10b4b3428f8300e4318468b605240c2ede8fcfb6ead2e0f05bca31e54c1b
   languageName: node
   linkType: hard
 
@@ -2244,7 +2244,7 @@ __metadata:
     "@repo/eslint-config": "npm:*"
     "@repo/tsconfig": "npm:*"
     "@types/eslint": "npm:^9.6.1"
-    "@types/node": "npm:^22.9.4"
+    "@types/node": "npm:^22.10.0"
     "@types/react-dom": "npm:18.3.1"
     "@types/validator": "npm:^13.12.2"
     "@vitest/coverage-v8": "npm:^2.1.5"
@@ -5996,12 +5996,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:^3.3.3":
-  version: 3.3.3
-  resolution: "prettier@npm:3.3.3"
+"prettier@npm:^3.4.0":
+  version: 3.4.0
+  resolution: "prettier@npm:3.4.0"
   bin:
     prettier: bin/prettier.cjs
-  checksum: 10c0/b85828b08e7505716324e4245549b9205c0cacb25342a030ba8885aba2039a115dbcf75a0b7ca3b37bc9d101ee61fab8113fc69ca3359f2a226f1ecc07ad2e26
+  checksum: 10c0/00974e5053dcf04cefe8d6bdef16d6a311d834ff074e927dcb85a425c8a300113fe60dc269373c892edb58e0e57749541f2a7a91ee51cdd40ab3092587772cae
   languageName: node
   linkType: hard
 
@@ -7223,10 +7223,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"undici-types@npm:~6.19.8":
-  version: 6.19.8
-  resolution: "undici-types@npm:6.19.8"
-  checksum: 10c0/078afa5990fba110f6824823ace86073b4638f1d5112ee26e790155f481f2a868cc3e0615505b6f4282bdf74a3d8caad715fd809e870c2bb0704e3ea6082f344
+"undici-types@npm:~6.20.0":
+  version: 6.20.0
+  resolution: "undici-types@npm:6.20.0"
+  checksum: 10c0/68e659a98898d6a836a9a59e6adf14a5d799707f5ea629433e025ac90d239f75e408e2e5ff086afc3cace26f8b26ee52155293564593fbb4a2f666af57fc59bf
   languageName: node
   linkType: hard
 
