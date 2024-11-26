@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/better-auth-plugin-harmony.iml" filepath="$PROJECT_DIR$/.idea/better-auth-plugin-harmony.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/better-auth-harmony.iml" filepath="$PROJECT_DIR$/.idea/better-auth-harmony.iml" />
     </modules>
   </component>
 </project>

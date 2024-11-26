@@ -1406,7 +1406,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@repo/eslint-config@npm:*, @repo/eslint-config@workspace:^, @repo/eslint-config@workspace:packages/eslint-config":
+"@repo/eslint-config@npm:*, @repo/eslint-config@workspace:*, @repo/eslint-config@workspace:^, @repo/eslint-config@workspace:packages/eslint-config":
   version: 0.0.0-use.local
   resolution: "@repo/eslint-config@workspace:packages/eslint-config"
   dependencies:
@@ -1445,8 +1445,8 @@ __metadata:
   dependencies:
     "@changesets/changelog-github": "npm:^0.5.0"
     "@changesets/cli": "npm:^2.27.10"
-    "@repo/eslint-config": "workspace:^"
-    "@repo/tsconfig": "workspace:^"
+    "@repo/eslint-config": "workspace:*"
+    "@repo/tsconfig": "workspace:*"
     eslint: "npm:^9.15.0"
     prettier: "npm:^3.3.3"
     turbo: "npm:^2.3.2"
@@ -1454,7 +1454,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@repo/tsconfig@npm:*, @repo/tsconfig@workspace:^, @repo/tsconfig@workspace:packages/tsconfig":
+"@repo/tsconfig@npm:*, @repo/tsconfig@workspace:*, @repo/tsconfig@workspace:packages/tsconfig":
   version: 0.0.0-use.local
   resolution: "@repo/tsconfig@workspace:packages/tsconfig"
   dependencies:
@@ -2237,9 +2237,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"better-auth-plugin-harmony@workspace:packages/plugins":
+"better-auth-harmony@workspace:packages/plugins":
   version: 0.0.0-use.local
-  resolution: "better-auth-plugin-harmony@workspace:packages/plugins"
+  resolution: "better-auth-harmony@workspace:packages/plugins"
   dependencies:
     "@repo/eslint-config": "npm:*"
     "@repo/tsconfig": "npm:*"

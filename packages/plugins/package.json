@@ -1,5 +1,5 @@
 {
-  "name": "better-auth-plugin-harmony",
+  "name": "better-auth-harmony",
   "version": "1.0.3",
   "author": "George Kormaris <npm@gekorm.com>",
   "type": "module",
@@ -18,13 +18,13 @@
     "disposable"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/gekorm/better-auth-plugin-harmony",
+  "homepage": "https://github.com/gekorm/better-auth-harmony",
   "repository": {
     "type": "git",
-    "url": "https://github.com/gekorm/better-auth-plugin-harmony.git"
+    "url": "https://github.com/gekorm/better-auth-harmony.git"
   },
   "bugs": {
-    "url": "https://github.com/gekorm/better-auth-plugin-harmony/issues"
+    "url": "https://github.com/gekorm/better-auth-harmony/issues"
   },
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",

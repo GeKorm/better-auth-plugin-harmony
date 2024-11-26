@@ -2,33 +2,32 @@
   <a href="https://github.com/better-auth/better-auth">
     <picture>
       <source
-        srcset="https://raw.githubusercontent.com/gekorm/better-auth-plugin-harmony/refs/heads/main/packages/plugins/assets/better-auth-logo-dark.png"
+        srcset="https://raw.githubusercontent.com/gekorm/better-auth-harmony/refs/heads/main/packages/plugins/assets/better-auth-logo-dark.png"
         media="(prefers-color-scheme: dark)"
       />
       <source
-        srcset="https://raw.githubusercontent.com/gekorm/better-auth-plugin-harmony/refs/heads/main/packages/plugins/assets/better-auth-logo-light.png"
+        srcset="https://raw.githubusercontent.com/gekorm/better-auth-harmony/refs/heads/main/packages/plugins/assets/better-auth-logo-light.png"
         media="(prefers-color-scheme: light)"
       />
       <img
         width="215"
         height="auto"
-        src="https://raw.githubusercontent.com/gekorm/better-auth-plugin-harmony/refs/heads/main/packages/plugins/assets/better-auth-logo-dark.png"
+        src="https://raw.githubusercontent.com/gekorm/better-auth-harmony/refs/heads/main/packages/plugins/assets/better-auth-logo-light.png"
         alt="Better Auth Logo"
       />
     </picture>
   </a>
-  &emsp14;
   <img
     alt="Better Auth Plugin Harmony Logo"
-    src="https://raw.githubusercontent.com/gekorm/better-auth-plugin-harmony/refs/heads/main/packages/plugins/assets/better-auth-harmony-logo-180.png"
+    src="https://raw.githubusercontent.com/gekorm/better-auth-harmony/refs/heads/main/packages/plugins/assets/better-auth-harmony-logo-180.png"
     width="180"
     height="auto"
   />
-  <h1>Better Auth Plugin Harmony</h1>
+  <h1>Better Auth Harmony</h1>
 
-<a href="https://github.com/gekorm/better-auth-plugin-harmony/actions/workflows/code-quality.yml"><img alt="100% coverage with Vitest" src="https://img.shields.io/badge/Coverage-100%25-green?style=flat-square&logo=vitest"></a>
-<a href="https://www.npmjs.com/package/better-auth-plugin-harmony"><img alt="NPM Version" src="https://img.shields.io/npm/v/better-auth-plugin-harmony?style=flat-square"></a>
-<a href="https://github.com/vercel/next.js/blob/canary/license.md"><img alt="NPM License" src="https://img.shields.io/npm/l/better-auth-plugin-harmony?style=flat-square"></a>
+<a href="https://github.com/gekorm/better-auth-harmony/actions/workflows/code-quality.yml"><img alt="100% coverage with Vitest" src="https://img.shields.io/badge/Coverage-100%25-green?style=flat-square&logo=vitest"></a>
+<a href="https://www.npmjs.com/package/better-auth-harmony"><img alt="NPM Version" src="https://img.shields.io/npm/v/better-auth-harmony?style=flat-square"></a>
+<a href="https://github.com/vercel/next.js/blob/canary/license.md"><img alt="NPM License" src="https://img.shields.io/npm/l/better-auth-harmony?style=flat-square"></a>
 
 </div>
 
@@ -43,7 +42,7 @@ and additional validation by blocking over 55,000 temporary email domains.
 ### 1. Install the plugin
 
 ```shell
-npm i better-auth-plugin-harmony
+npm i better-auth-harmony
 ```
 
 ### 2. Add the plugin to your auth config
@@ -52,7 +51,7 @@ npm i better-auth-plugin-harmony
 // auth.ts
 
 import { betterAuth } from 'better-auth';
-import { emailHarmony } from 'better-auth-plugin-harmony';
+import { emailHarmony } from 'better-auth-harmony';
 
 export const auth = betterAuth({
   // ... other config options
