@@ -55,6 +55,10 @@ jobs:
 
       - name: Lint
         run: yarn lint
+
+      - name: Lint
+        run: yarn build
+
   tests:
     runs-on: ubuntu-latest
     timeout-minutes: 15
