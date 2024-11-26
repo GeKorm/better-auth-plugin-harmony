@@ -26,13 +26,13 @@
   <h1>Better Auth Harmony</h1>
 
 <a href="https://github.com/gekorm/better-auth-harmony/actions/workflows/code-quality.yml"><img alt="100% coverage with Vitest" src="https://img.shields.io/badge/Coverage-100%25-green?style=flat-square&logo=vitest"></a>
-<a href="https://www.npmjs.com/package/better-auth-harmony"><img alt="NPM Version" src="https://img.shields.io/npm/v/better-auth-harmony?style=flat-square"></a>
-<a href="https://github.com/vercel/next.js/blob/canary/license.md"><img alt="NPM License" src="https://img.shields.io/npm/l/better-auth-harmony?style=flat-square"></a>
+<a href="https://www.npmjs.com/package/better-auth-harmony"><img alt="NPM Version" src="https://img.shields.io/npm/v/better-auth-harmony?style=flat-square&logo=npm"></a>
+<a href="https://github.com/GeKorm/better-auth-harmony/blob/main/packages/plugins/LICENSE.md"><img alt="NPM License" src="https://img.shields.io/npm/l/better-auth-harmony?style=flat-square&cacheSeconds=1"></a>
 
 </div>
 
-A [better-auth](https://github.com/better-auth/better-auth) plugin that provides email normalization
-and additional validation by blocking over 55,000 temporary email domains.
+A [better-auth](https://github.com/better-auth/better-auth) plugin for email normalization and
+additional validation, blocking over 55,000 temporary email domains.
 
 **Normalization:** `foo+temp@gmail.com` -> `foo@gmail.com`  
 **Validation:** `throwaway@mailinator.com` -> Blocked
