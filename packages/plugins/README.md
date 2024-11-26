@@ -34,8 +34,8 @@
 A [better-auth](https://github.com/better-auth/better-auth) plugin that provides email normalization
 and additional validation by blocking over 55,000 temporary email domains.
 
-**Normalization:** "foo+bar@gmail.com" -> "foo@gmail.com"  
-**Validation:** "temp@mailinator.com" -> Blocked
+**Normalization:** `foo+temp@gmail.com` -> `foo@gmail.com`  
+**Validation:** `throwaway@mailinator.com` -> Blocked
 
 ## Getting Started
 
