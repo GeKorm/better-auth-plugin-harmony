@@ -1,6 +1,6 @@
 {
   "name": "better-auth-harmony",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "author": "George Kormaris <npm@gekorm.com>",
   "type": "module",
   "scripts": {
