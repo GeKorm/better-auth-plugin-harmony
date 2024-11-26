@@ -22,6 +22,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 2
+          submodules: true
 
       - name: Cache turbo setup
         uses: actions/cache@v4
@@ -44,7 +45,7 @@ jobs:
           cache-install-state: true
 
       - name: Submodule install
-        run: cd better-auth/ && npm config set ignore-scripts true && pnpm i && cd ..
+        run: cd better-auth/ && corepack enable && pnpm i && cd ..
 
       - name: Check prettier styles
         run: yarn stylecheck
@@ -83,7 +84,7 @@ jobs:
           cache-install-state: true
 
       - name: Submodule install
-        run: cd better-auth/ && npm config set ignore-scripts true && pnpm i && cd ..
+        run: cd better-auth/ && corepack enable && pnpm i && cd ..
 
       - name: Test
         run: yarn test

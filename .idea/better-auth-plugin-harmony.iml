@@ -13,6 +13,7 @@
       <excludeFolder url="file://$MODULE_DIR$/.idea/dictionaries" />
       <excludeFolder url="file://$MODULE_DIR$/better-auth/packages/better-auth" />
       <excludeFolder url="file://$MODULE_DIR$/packages/plugins/.db" />
+      <excludeFolder url="file://$MODULE_DIR$/better-auth" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
