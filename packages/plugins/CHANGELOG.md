@@ -1,5 +1,12 @@
 # better-auth-harmony
 
+## 1.0.4
+
+### Patch Changes
+
+- [`10f8e40`](https://github.com/GeKorm/better-auth-harmony/commit/10f8e4070506300f650256d01b4750da7be7319f)
+  Thanks [@GeKorm](https://github.com/GeKorm)! - Rename package to better-auth-harmony
+
 ## 1.0.3
 
 ### Patch Changes
