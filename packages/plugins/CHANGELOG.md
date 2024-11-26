@@ -1,5 +1,12 @@
 # better-auth-harmony
 
+## 1.0.6
+
+### Patch Changes
+
+- [`fb98830`](https://github.com/GeKorm/better-auth-harmony/commit/fb98830d1dc598fa08cb5ce511f34a39ac78ce4e)
+  Thanks [@GeKorm](https://github.com/GeKorm)! - Upgrade dependencies
+
 ## 1.0.5
 
 ### Patch Changes
