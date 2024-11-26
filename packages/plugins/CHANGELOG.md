@@ -1,5 +1,12 @@
 # better-auth-harmony
 
+## 1.0.5
+
+### Patch Changes
+
+- [`f6b2781`](https://github.com/GeKorm/better-auth-harmony/commit/f6b2781df5feb10eb9ec10b6656f0d3a0a2b9666)
+  Thanks [@GeKorm](https://github.com/GeKorm)! - Fix README badges
+
 ## 1.0.4
 
 ### Patch Changes
