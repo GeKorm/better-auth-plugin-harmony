@@ -4,6 +4,7 @@ import js from '@eslint/js';
 import json from '@eslint/json';
 import markdown from '@eslint/markdown';
 import comments from '@eslint-community/eslint-plugin-eslint-comments/configs';
+import vitest from '@vitest/eslint-plugin';
 import airbnbBestPractices from 'eslint-config-airbnb-base/rules/best-practices';
 import airbnbErrors from 'eslint-config-airbnb-base/rules/errors';
 import airbnbEs6 from 'eslint-config-airbnb-base/rules/es6';
@@ -88,6 +89,19 @@ export default tseslint.config(
     ? compat.extends('plugin:eslint-plugin-redos/recommended')
     : [],
   { ...regexpPlugin.configs['flat/recommended'], files: codeFiles },
+  {
+    files: ['**/*.test.{js,jsx,cjs,mjs,ts,tsx,cts,mts}'], // or any other pattern
+    plugins: { vitest },
+    rules: vitest.configs.recommended.rules,
+    settings: {
+      vitest: {
+        typecheck: true
+      }
+    },
+    languageOptions: {
+      globals: vitest.environments.env.globals
+    }
+  },
   {
     files: codeFiles,
     rules: {

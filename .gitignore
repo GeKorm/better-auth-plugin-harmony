@@ -56,3 +56,5 @@ lerna-debug.log*
 
 .idea/dictionaries/
 /packages/plugins/.db/
+
+.idea/
