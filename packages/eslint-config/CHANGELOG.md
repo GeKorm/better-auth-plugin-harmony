@@ -1,5 +1,12 @@
 # @repo/eslint-config
 
+## 0.0.4
+
+### Patch Changes
+
+- [`f09514f`](https://github.com/GeKorm/better-auth-harmony/commit/f09514fb568263e1cc2a9b314e9490bb711e8cde)
+  Thanks [@GeKorm](https://github.com/GeKorm)! - Add vitest ESLint plugin, upgrade dependencies
+
 ## 0.0.3
 
 ### Patch Changes

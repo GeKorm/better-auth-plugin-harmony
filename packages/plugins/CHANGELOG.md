@@ -1,5 +1,12 @@
 # better-auth-harmony
 
+## 1.1.0
+
+### Minor Changes
+
+- [`45ee04a`](https://github.com/GeKorm/better-auth-harmony/commit/45ee04ab43e0815f9101b3523cf5c8e74faaed23)
+  Thanks [@GeKorm](https://github.com/GeKorm)! - Add phone number normalization plugin
+
 ## 1.0.6
 
 ### Patch Changes
