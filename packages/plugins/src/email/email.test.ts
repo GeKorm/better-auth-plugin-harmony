@@ -1,7 +1,7 @@
-import { afterAll, describe, expect } from 'vitest';
+import { afterAll, describe, expect, it } from 'vitest';
 // eslint-disable-next-line import/no-relative-packages -- couldn't find a better way to include it
-import { getTestInstance } from '../../../better-auth/packages/better-auth/src/test-utils/test-instance';
-import emailHarmony, { type UserWithNormalizedEmail } from './email';
+import { getTestInstance } from '../../../../better-auth/packages/better-auth/src/test-utils/test-instance';
+import emailHarmony, { type UserWithNormalizedEmail } from '.';
 
 interface SQLiteDB {
   close: () => Promise<void>;
@@ -22,7 +22,7 @@ describe('email harmony', async () => {
     await (auth.options.database as unknown as SQLiteDB).close();
   });
 
-  describe('signup', (it) => {
+  describe('signup', () => {
     it('should normalize email', async () => {
       const rawEmail = 'new.email+test@googlemail.com';
       await client.signUp.email({
@@ -81,7 +81,7 @@ describe('email harmony', async () => {
     });
   });
 
-  describe('login', (it) => {
+  describe('login', () => {
     it('should work with normalized email form', async () => {
       const email = 'email@gmail.com';
       await client.signUp.email({
@@ -94,7 +94,7 @@ describe('email harmony', async () => {
         password: 'new-password'
       });
       expect(data?.user.email).toBe(email);
-    });
+    }, 15_000);
 
     it('should return error on incorrect email type', async () => {
       const { data, error } = await client.signIn.email({

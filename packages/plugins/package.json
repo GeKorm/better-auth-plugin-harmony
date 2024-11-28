@@ -15,7 +15,9 @@
     "authentication",
     "email",
     "domains",
-    "disposable"
+    "disposable",
+    "phone number",
+    "mobile"
   ],
   "license": "MIT",
   "homepage": "https://github.com/gekorm/better-auth-harmony",
@@ -39,6 +41,16 @@
         "default": "./dist/index.cjs"
       }
     },
+    "./phone": {
+      "import": {
+        "types": "./dist/phone.d.ts",
+        "default": "./dist/phone.js"
+      },
+      "require": {
+        "types": "./dist/phone.d.cts",
+        "default": "./dist/phone.cjs"
+      }
+    },
     "./email": {
       "import": {
         "types": "./dist/email.d.ts",
@@ -59,23 +71,24 @@
     "@repo/eslint-config": "*",
     "@repo/tsconfig": "*",
     "@types/eslint": "^9.6.1",
-    "@types/node": "^22.10.0",
+    "@types/node": "^22.10.1",
     "@types/react-dom": "18.3.1",
     "@types/validator": "^13.12.2",
-    "@vitest/coverage-v8": "^2.1.5",
+    "@vitest/coverage-v8": "^2.1.6",
     "better-auth": "1.0.4",
     "eslint": "^9.15.0",
     "rimraf": "^6.0.1",
     "tsup": "^8.3.5",
     "typescript": "5.7.2",
-    "vitest": "^2.1.5"
+    "vitest": "^2.1.6"
   },
   "peerDependencies": {
     "better-auth": "^1.0.3"
   },
   "dependencies": {
     "better-call": "^0.3.2",
-    "mailchecker": "^6.0.12",
+    "libphonenumber-js": "^1.11.15",
+    "mailchecker": "^6.0.13",
     "validator": "^13.12.0"
   }
 }

@@ -10,9 +10,9 @@ export interface UserWithNormalizedEmail extends User {
 
 export interface EmailHarmonyOptions {
   /**
-   * Allow logging in with any version of the unnormalized email address. For example a user who signed up with the
-   * email `johndoe@googlemail.com` may also log in with `john.doe@gmail.com`. Makes 1 extra database query for
-   * every login attempt.
+   * Allow logging in with any version of the unnormalized email address. For example a user who
+   * signed up with the email `johndoe@googlemail.com` may also log in with `john.doe@gmail.com`.
+   * Makes 1 extra database query for every login attempt.
    * @default false
    */
   allowNormalizedSignin?: boolean;

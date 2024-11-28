@@ -1,5 +1,3 @@
-[//]: # 'FIXME: Use a single picture of the pair (one dark, one light)'
-
 <div align="center">
     <picture>
       <source
@@ -26,11 +24,25 @@
 
 </div>
 
-A [better-auth](https://github.com/better-auth/better-auth) plugin for email normalization and
-additional validation, blocking over 55,000 temporary email domains.
+A [better-auth](https://github.com/better-auth/better-auth) plugin for email & phone normalization
+and additional validation, blocking over 55,000 temporary email domains.
 
-**Normalization:** `foo+temp@gmail.com` -> `foo@gmail.com`  
+**Email normalization:** `foo+temp@gmail.com` -> `foo@gmail.com`  
+**Phone normalization:** `+1 (555) 123-1234` -> `+15551231234`  
 **Validation:** `throwaway@mailinator.com` -> Blocked
+
+<!-- TOC -->
+
+- [Email](#email)
+  - [Getting Started](#getting-started)
+  - [Options](#options)
+  - [Schema](#schema)
+- [Phone number](#phone-number)
+  - [Getting Started](#getting-started-1)
+  - [Options](#options-1)
+  <!-- TOC -->
+
+# Email
 
 ## Getting Started
 
@@ -44,7 +56,6 @@ npm i better-auth-harmony
 
 ```typescript
 // auth.ts
-
 import { betterAuth } from 'better-auth';
 import { emailHarmony } from 'better-auth-harmony';
 
@@ -90,3 +101,60 @@ The `emailHarmony` plugin requires an additional field in the user table:
 
 The `normalizedEmail` field being unique prevents users from signing up with throwaway variations of
 the same email address.
+
+---
+
+# Phone number
+
+<!-- eslint-disable markdown/no-missing-label-refs -- https://github.com/eslint/markdown/issues/294 -->
+<!-- prettier-ignore -->
+> [!NOTE]
+> Unlike `emailHarmony`, phone number normalization intercepts and modifies the user's
+`phoneNumber`, permitting only normalized numbers in the backend.
+
+<!-- eslint-enable markdown/no-missing-label-refs -- https://github.com/eslint/markdown/issues/294 -->
+
+## Getting Started
+
+### 1. Install the plugin
+
+```shell
+npm i better-auth-harmony
+```
+
+#### 2. Add the plugin to your auth config
+
+```typescript
+// auth.ts
+import { betterAuth } from 'better-auth';
+import { phoneNumber } from 'better-auth/plugins';
+import { phoneHarmony } from 'better-auth-harmony';
+
+export const auth = betterAuth({
+  // ... other config options
+  plugins: [phoneNumber(), phoneHarmony()]
+});
+```
+
+See the better-auth
+[`phoneNumber` plugin documentation](https://www.better-auth.com/docs/plugins/phone-number) for
+information on configuring the `phoneNumber()`, including **validation**.
+
+## Options
+
+- `defaultCountry` - Default [country](https://www.npmjs.com/package/libphonenumber-js#country-code)
+  for numbers written in non-international form (without a `+` sign).
+- `defaultCallingCode` - Default calling code for numbers written in non-international form (without
+  a `+` sign). Useful for parsing non-geographic codes such as
+  [`+800` numbers](https://en.wikipedia.org/wiki/Toll-free_telephone_number).
+- `extract` (default=**true**) - Defines the
+  ["strictness"](https://www.npmjs.com/package/libphonenumber-js#strictness) of parsing a phone
+  number. By default, it will attempt to extract the phone number from any input string, such as
+  `"My phone number is (213) 373-4253"`.
+- `acceptRawInputOnError` (default=**false**) - If the normalizer throws, for example because it is
+  unable to parse the phone number, use the original input. For example, the phone number `"+12"`
+  will be saved as-is to the database.
+- `normalizer` - Custom function to normalize phone number. Default uses
+  [`parsePhoneNumberWithError`](https://www.npmjs.com/package/libphonenumber-js#user-content-parse-phone-number)
+  from `libphonenumber-js/max`. Can be used to infer the country through the Request object, for
+  example using IP address geolocation.

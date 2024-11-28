@@ -1545,7 +1545,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^22.10.0":
+"@types/node@npm:^22.10.1":
   version: 22.10.1
   resolution: "@types/node@npm:22.10.1"
   dependencies:
@@ -1722,7 +1722,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vitest/coverage-v8@npm:^2.1.5":
+"@vitest/coverage-v8@npm:^2.1.6":
   version: 2.1.6
   resolution: "@vitest/coverage-v8@npm:2.1.6"
   dependencies:
@@ -2102,19 +2102,20 @@ __metadata:
     "@repo/eslint-config": "npm:*"
     "@repo/tsconfig": "npm:*"
     "@types/eslint": "npm:^9.6.1"
-    "@types/node": "npm:^22.10.0"
+    "@types/node": "npm:^22.10.1"
     "@types/react-dom": "npm:18.3.1"
     "@types/validator": "npm:^13.12.2"
-    "@vitest/coverage-v8": "npm:^2.1.5"
+    "@vitest/coverage-v8": "npm:^2.1.6"
     better-auth: "npm:1.0.4"
     better-call: "npm:^0.3.2"
     eslint: "npm:^9.15.0"
-    mailchecker: "npm:^6.0.12"
+    libphonenumber-js: "npm:^1.11.15"
+    mailchecker: "npm:^6.0.13"
     rimraf: "npm:^6.0.1"
     tsup: "npm:^8.3.5"
     typescript: "npm:5.7.2"
     validator: "npm:^13.12.0"
-    vitest: "npm:^2.1.5"
+    vitest: "npm:^2.1.6"
   peerDependencies:
     better-auth: ^1.0.3
   languageName: unknown
@@ -4418,6 +4419,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"libphonenumber-js@npm:^1.11.15":
+  version: 1.11.15
+  resolution: "libphonenumber-js@npm:1.11.15"
+  checksum: 10c0/eb1794ee38d2bc3087f7e5596740949493c745fe4734c5bcee3cf51344da16e1ea49c96fcc19c57eac36ebfffda6d328cbdbaff7bc26714a594a4a98f7789153
+  languageName: node
+  linkType: hard
+
 "lilconfig@npm:^3.1.1":
   version: 3.1.2
   resolution: "lilconfig@npm:3.1.2"
@@ -4533,7 +4541,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mailchecker@npm:^6.0.12":
+"mailchecker@npm:^6.0.13":
   version: 6.0.13
   resolution: "mailchecker@npm:6.0.13"
   dependencies:
@@ -7179,7 +7187,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vitest@npm:^2.1.5":
+"vitest@npm:^2.1.6":
   version: 2.1.6
   resolution: "vitest@npm:2.1.6"
   dependencies:
