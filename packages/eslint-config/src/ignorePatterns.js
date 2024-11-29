@@ -9,6 +9,7 @@ const ignorePatterns = [
   'out/',
   'build',
   'dist/',
+  '**/CHANGELOG.md',
   'packages/', // Prevent linting from workspace roots
   '.turbo',
   '.vercel',

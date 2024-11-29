@@ -14,6 +14,7 @@ import airbnbStrict from 'eslint-config-airbnb-base/rules/strict';
 import airbnbStyle from 'eslint-config-airbnb-base/rules/style';
 import airbnbVariables from 'eslint-config-airbnb-base/rules/variables';
 import eslintConfigPrettier from 'eslint-config-prettier';
+import turboConfig from 'eslint-config-turbo/flat';
 import importPlugin from 'eslint-plugin-import';
 import jsdoc from 'eslint-plugin-jsdoc';
 import node from 'eslint-plugin-n';
@@ -47,6 +48,7 @@ export default tseslint.config(
   {
     ignores: ignorePatterns
   },
+  { ...turboConfig[0], files: codeFiles },
   {
     plugins: {
       'simple-import-sort': simpleImportSort
@@ -179,7 +181,7 @@ export default tseslint.config(
       'import/prefer-default-export': 0,
       'lines-between-class-members': [2, 'always', { exceptAfterSingleLine: true }],
       'n/no-extraneous-import': 0, // covered by other rules
-      'n/ no-extraneous-require': 0, // covered by other rules
+      'n/no-extraneous-require': 0, // covered by other rules
       'n/no-missing-import': 0, // covered by other rules
       'n/no-unpublished-import': [
         'error',

@@ -1245,7 +1245,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@repo/eslint-config@npm:*, @repo/eslint-config@workspace:*, @repo/eslint-config@workspace:^, @repo/eslint-config@workspace:packages/eslint-config":
+"@repo/eslint-config@npm:*, @repo/eslint-config@workspace:*, @repo/eslint-config@workspace:packages/eslint-config":
   version: 0.0.0-use.local
   resolution: "@repo/eslint-config@workspace:packages/eslint-config"
   dependencies:
@@ -1260,6 +1260,7 @@ __metadata:
     eslint: "npm:^9.15.0"
     eslint-config-airbnb-base: "npm:^15.0.0"
     eslint-config-prettier: "npm:^9.1.0"
+    eslint-config-turbo: "npm:^2.3.3"
     eslint-import-resolver-node: "npm:^0.3.9"
     eslint-import-resolver-typescript: "npm:^3.6.3"
     eslint-plugin-import: "npm:^2.31.0"
@@ -1277,6 +1278,10 @@ __metadata:
     typescript-eslint: "npm:^8.16.0"
   peerDependencies:
     eslint: 9.15.0
+    typescript: ^5.6.0
+  peerDependenciesMeta:
+    typescript:
+      optional: true
   languageName: unknown
   linkType: soft
 
@@ -1299,7 +1304,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@repo/tsconfig@workspace:packages/tsconfig"
   dependencies:
-    "@repo/eslint-config": "workspace:^"
+    "@repo/eslint-config": "workspace:*"
     eslint: "npm:^9.15.0"
     typescript: "npm:^5.7.2"
   peerDependencies:
@@ -2977,6 +2982,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"eslint-config-turbo@npm:^2.3.3":
+  version: 2.3.3
+  resolution: "eslint-config-turbo@npm:2.3.3"
+  dependencies:
+    eslint-plugin-turbo: "npm:2.3.3"
+  peerDependencies:
+    eslint: ">6.6.0"
+  checksum: 10c0/35f0e07e96eebaf7b65cfbaec28225004d78cab96e70d488d24c50219f9ddcbb2f57854c06818aaf4743501ee7c67723cf9e464a2ff177bd6aa72f4db9938349
+  languageName: node
+  linkType: hard
+
 "eslint-import-resolver-node@npm:^0.3.9":
   version: 0.3.9
   resolution: "eslint-import-resolver-node@npm:0.3.9"
@@ -3163,7 +3179,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-turbo@npm:^2.3.3":
+"eslint-plugin-turbo@npm:2.3.3, eslint-plugin-turbo@npm:^2.3.3":
   version: 2.3.3
   resolution: "eslint-plugin-turbo@npm:2.3.3"
   dependencies:
