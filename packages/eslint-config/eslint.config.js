@@ -15,6 +15,7 @@ import airbnbStyle from 'eslint-config-airbnb-base/rules/style';
 import airbnbVariables from 'eslint-config-airbnb-base/rules/variables';
 import eslintConfigPrettier from 'eslint-config-prettier';
 import importPlugin from 'eslint-plugin-import';
+import jsdoc from 'eslint-plugin-jsdoc';
 import node from 'eslint-plugin-n';
 import promise from 'eslint-plugin-promise';
 import * as regexpPlugin from 'eslint-plugin-regexp';
@@ -176,16 +177,6 @@ export default tseslint.config(
       'import/no-extraneous-dependencies': ['error', extraneous],
       'import/order': 0,
       'import/prefer-default-export': 0,
-      'jsdoc/require-jsdoc': 0,
-      'jsdoc/require-description': 0,
-      'jsdoc/require-example': 0,
-      'jsdoc/require-file-overview': 0,
-      'jsdoc/require-param': 0,
-      'jsdoc/require-property': 0,
-      'jsdoc/require-returns': 0,
-      'jsdoc/require-returns-description': 0,
-      'jsdoc/require-throws': 0,
-      'jsdoc/require-yields': 0,
       'lines-between-class-members': [2, 'always', { exceptAfterSingleLine: true }],
       'n/no-extraneous-import': 0, // covered by other rules
       'n/ no-extraneous-require': 0, // covered by other rules
@@ -280,7 +271,19 @@ export default tseslint.config(
   },
   {
     files: ['**/*.{js,jsx,cjs,mjs}'],
-    extends: [tsConfigs.disableTypeChecked]
+    plugins: { jsdoc },
+    extends: [
+      jsdoc.configs['flat/stylistic-typescript-flavor-error'],
+      jsdoc.configs['flat/recommended-typescript-flavor-error'],
+      tsConfigs.disableTypeChecked
+    ]
+  },
+  {
+    files: ['**/*.{ts,tsx,cts,mts}'],
+    extends: [
+      jsdoc.configs['flat/stylistic-typescript-error'],
+      jsdoc.configs['flat/recommended-typescript-error']
+    ]
   },
   {
     // Enable the Markdown processor for all .md files.
