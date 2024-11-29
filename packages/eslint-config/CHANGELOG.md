@@ -1,5 +1,16 @@
 # @repo/eslint-config
 
+## 0.0.5
+
+### Patch Changes
+
+- [`b64004d`](https://github.com/GeKorm/better-auth-harmony/commit/b64004d175d34321607daa7f998bf3c05f14d276)
+  Thanks [@GeKorm](https://github.com/GeKorm)! - Add missing turbo config, fix typo, ignore
+  CHANGELOG
+
+- [`62b4d42`](https://github.com/GeKorm/better-auth-harmony/commit/62b4d42f049b6ce53663ce54a3a409e4809fe9e9)
+  Thanks [@GeKorm](https://github.com/GeKorm)! - Add missing jsdoc plugin
+
 ## 0.0.4
 
 ### Patch Changes
