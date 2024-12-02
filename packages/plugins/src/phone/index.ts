@@ -1,5 +1,5 @@
+import { APIError } from 'better-auth/api';
 import { type BetterAuthPlugin, createAuthMiddleware } from 'better-auth/plugins';
-import { APIError } from 'better-call';
 import {
   type CountryCode,
   type E164Number,

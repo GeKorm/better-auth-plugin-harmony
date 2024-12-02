@@ -20,18 +20,18 @@
     "./ignorePatterns": "./src/ignorePatterns.js"
   },
   "devDependencies": {
-    "eslint": "^9.15.0",
+    "eslint": "^9.16.0",
     "typescript": "^5.7.2"
   },
   "dependencies": {
     "@eslint-community/eslint-plugin-eslint-comments": "^4.4.1",
     "@eslint/eslintrc": "^3.2.0",
-    "@eslint/js": "^9.15.0",
+    "@eslint/js": "^9.16.0",
     "@eslint/json": "^0.8.0",
     "@eslint/markdown": "^6.2.1",
     "@typescript-eslint/parser": "^8.16.0",
     "@typescript-eslint/utils": "^8.16.0",
-    "@vitest/eslint-plugin": "^1.1.12",
+    "@vitest/eslint-plugin": "^1.1.13",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-config-turbo": "^2.3.3",
@@ -47,7 +47,7 @@
     "eslint-plugin-simple-import-sort": "^12.1.1",
     "eslint-plugin-turbo": "^2.3.3",
     "eslint-plugin-unicorn": "^56.0.1",
-    "eslint-plugin-yml": "^1.15.0",
+    "eslint-plugin-yml": "^1.16.0",
     "typescript-eslint": "^8.16.0"
   },
   "peerDependencies": {
