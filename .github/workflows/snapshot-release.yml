@@ -32,6 +32,7 @@ on:
 jobs:
   publish:
     runs-on: ubuntu-latest
+    environment: production
     permissions:
       id-token: write
       contents: write
@@ -112,6 +113,7 @@ jobs:
       - name: Use Node.js 22
         uses: actions/setup-node@v4
         with:
+          registry-url: 'https://registry.npmjs.org'
           node-version: 22
 
       - name: 📥 Monorepo install
@@ -129,14 +131,15 @@ jobs:
           echo PKG_VERSION="$(git show --no-patch --format=0.0.0-commit-release.0.%ct.%h)" >>
           $GITHUB_ENV
 
+      - name: Build
+        run: yarn build
+
       - name: 'better-auth-harmony: update version'
         run: |
           yarn workspace better-auth-harmony exec npm pkg set "version=${{ env.PKG_VERSION }}"
           yarn workspace better-auth-harmony exec jq '{ version: .version, dependencies: .dependencies, peerDependencies: .peerDependencies }' package.json
       - name: 'better-auth-harmony: publish'
-        run:
-          yarn workspace better-auth-harmony exec npm publish --access public --tag snapshot
-          --provenance
+        run: yarn workspace better-auth-harmony exec npm publish --access public --tag snapshot
         env:
           NODE_AUTH_TOKEN: ${{ secrets.YARN_NPM_AUTH_TOKEN }}
 
